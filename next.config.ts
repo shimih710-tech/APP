@@ -1,1 +1,1 @@
-import type { NextConfig } from "next"; const nextConfig:NextConfig={reactStrictMode:true}; export default nextConfig;
+import type { NextConfig } from "next"; const nextConfig:NextConfig={reactStrictMode:true,output:"export",images:{unoptimized:true},trailingSlash:true,basePath:process.env.NODE_ENV==="production"?"/APP":""}; export default nextConfig;
